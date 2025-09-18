@@ -40,12 +40,60 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4493533564871437079}
     m_Modifications:
+    - target: {fileID: 5622707692322846711, guid: 9a9dc2a71afbd56448eb9db47e0bf020, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 5622707692324616809, guid: 9a9dc2a71afbd56448eb9db47e0bf020, type: 3}
+      propertyPath: lengthInSec
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5622707692324616809, guid: 9a9dc2a71afbd56448eb9db47e0bf020, type: 3}
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5622707692324616809, guid: 9a9dc2a71afbd56448eb9db47e0bf020, type: 3}
+      propertyPath: InitialModule.size3D
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622707692324616809, guid: 9a9dc2a71afbd56448eb9db47e0bf020, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622707692324616809, guid: 9a9dc2a71afbd56448eb9db47e0bf020, type: 3}
       propertyPath: InitialModule.startSize.scalar
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622707692324616809, guid: 9a9dc2a71afbd56448eb9db47e0bf020, type: 3}
+      propertyPath: InitialModule.startSizeY.scalar
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622707692324616809, guid: 9a9dc2a71afbd56448eb9db47e0bf020, type: 3}
+      propertyPath: InitialModule.startSizeZ.scalar
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622707692324616809, guid: 9a9dc2a71afbd56448eb9db47e0bf020, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622707692324616809, guid: 9a9dc2a71afbd56448eb9db47e0bf020, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622707692324616809, guid: 9a9dc2a71afbd56448eb9db47e0bf020, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622707692324616809, guid: 9a9dc2a71afbd56448eb9db47e0bf020, type: 3}
+      propertyPath: VelocityModule.speedModifier.scalar
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622707692324616809, guid: 9a9dc2a71afbd56448eb9db47e0bf020, type: 3}
+      propertyPath: EmissionModule.rateOverDistance.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622707692324616809, guid: 9a9dc2a71afbd56448eb9db47e0bf020, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].time
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5622707692342711923, guid: 9a9dc2a71afbd56448eb9db47e0bf020, type: 3}
@@ -53,8 +101,20 @@ PrefabInstance:
       value: Magical_Staff_Flame_Thrower
       objectReference: {fileID: 0}
     - target: {fileID: 5622707692342873871, guid: 9a9dc2a71afbd56448eb9db47e0bf020, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622707692342873871, guid: 9a9dc2a71afbd56448eb9db47e0bf020, type: 3}
+      propertyPath: m_LocalScale.y
+      value: -0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622707692342873871, guid: 9a9dc2a71afbd56448eb9db47e0bf020, type: 3}
+      propertyPath: m_LocalScale.z
+      value: -0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5622707692342873871, guid: 9a9dc2a71afbd56448eb9db47e0bf020, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.0001
       objectReference: {fileID: 0}
     - target: {fileID: 5622707692342873871, guid: 9a9dc2a71afbd56448eb9db47e0bf020, type: 3}
       propertyPath: m_LocalPosition.y
@@ -551,7 +611,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 10
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0

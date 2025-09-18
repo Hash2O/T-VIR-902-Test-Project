@@ -51,6 +51,7 @@ namespace UnityEngine.XR.Content.Interaction
 
         void OnParticleCollision(GameObject other)
         {
+            Debug.Log("On Particle Collision");
             if (CanTrigger(other.gameObject))
                 m_OnEnter?.Invoke(other);
         }

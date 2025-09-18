@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.XR.Content.Interaction;
 
 public class FillPotionWithCookingPot : MonoBehaviour
 {
@@ -7,13 +8,16 @@ public class FillPotionWithCookingPot : MonoBehaviour
     [SerializeField] private GameObject content;
     [SerializeField] private ParticleSystem bubbles;
 
-    private OnTilt OnTilt;
-    private OnVelocity OnVelocity;
+    //private OnTilt onTilt;
+    //private OnVelocity onVelocity;
 
     private void Start()
     {
-        OnTilt = GetComponent<OnTilt>();
-        OnVelocity = GetComponent<OnVelocity>();
+        //onTilt = GetComponent<OnTilt>();
+        //onVelocity = GetComponent<OnVelocity>();
+
+        bubbles.gameObject.SetActive(false);
+        content.gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
