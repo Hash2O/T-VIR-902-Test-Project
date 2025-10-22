@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using static UnityEngine.ParticleSystem;
 
 public class VerminBusterManager : MonoBehaviour
 {
@@ -18,12 +19,11 @@ public class VerminBusterManager : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Vermin"))
         {
-            Transform spawnPoint = collision.transform;
-            Destroy(collision.gameObject);
-            GameObject prefab = Instantiate(smashPrefab, spawnPoint.position, Quaternion.identity);
+            GameObject prefab = Instantiate(smashPrefab, collision.transform.position, Quaternion.identity);
             smashParticle = prefab.GetComponentInChildren<ParticleSystem>();
             smashParticle.Play();
             smashAudio.Play();
+            if (collision.gameObject != null) Destroy(collision.gameObject);
         }
     }
 

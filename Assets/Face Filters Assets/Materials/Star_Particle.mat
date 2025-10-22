@@ -28,7 +28,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 8f637c0e1a0270447aa04746d128e04b, type: 3}
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -97,7 +97,7 @@ Material:
     - _ClearCoatSmoothness: 0
     - _ColorMode: 0
     - _Cull: 0
-    - _Cutoff: 0.46
+    - _Cutoff: 0.666
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DistortionBlend: 0.5
@@ -130,11 +130,11 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 0.955263, b: 0.4575472, a: 1}
+    - _BaseColor: {r: 0.29639104, g: 0.56393194, b: 0.8160377, a: 1}
     - _BaseColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 1, g: 0.95526296, b: 0.4575472, a: 1}
-    - _EmissionColor: {r: 4, g: 2.8649538, b: 0, a: 1}
+    - _Color: {r: 0.296391, g: 0.56393194, b: 0.8160377, a: 1}
+    - _EmissionColor: {r: 0.3121238, g: 1.6586894, b: 3.3085127, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
