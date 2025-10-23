@@ -6,8 +6,8 @@ public class RecipeManager : MonoBehaviour
     public static RecipeManager Instance { get; private set; }
 
     // A garder si on veut déplacer la gestion des recettes depuis le chaudron vers le RecipeManager
-    //[Header("Toutes les recettes disponibles dans le jeu")]
-    //public List<RecipeData> allRecipes = new List<RecipeData>();
+    [Header("Toutes les recettes disponibles dans le jeu")]
+    public List<RecipeData> allRecipes = new List<RecipeData>();
 
     [Header("Recettes découvertes par le joueur")]
     public List<RecipeData> discoveredRecipes = new List<RecipeData>();
@@ -35,7 +35,7 @@ public class RecipeManager : MonoBehaviour
         {
             discoveredRecipes.Add(recipe);
             Debug.Log($"Nouvelle recette découverte : {recipe.recipeName}");
-            // Notifier ici le Grimoire ou l’UI de découverte
+            // A faire : notifier ici le grimoire / livre de recettes (UI Canvas)
         }
     }
 

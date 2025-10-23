@@ -272,8 +272,8 @@ MonoBehaviour:
     y: 0
     width: 269.5
     height: 372.5
-  m_MinSize: {x: 202, y: 226}
-  m_MaxSize: {x: 4002, y: 4026}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -435,9 +435,9 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SkipHidden: 0
-    m_SearchArea: 1
+    m_SearchArea: 0
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts/ScriptableObjects/Recipes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -445,7 +445,7 @@ MonoBehaviour:
     m_ImportLogFlags: 0
     m_FilterByTypeIntersection: 0
   m_ViewMode: 0
-  m_StartGridSize: 64
+  m_StartGridSize: 16
   m_LastFolders: []
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\samue\Documents\Projets Unity\Epitech\T-VIR-902 Test
@@ -456,7 +456,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: f2a70000
     m_LastClickedID: 42994
-    m_ExpandedIDs: 0000000018d500001ad500001cd500001ed5000020d5000022d5000024d5000026d5000028d500002ad500002cd500002ed5000030d5000032d5000034d5000036d5000038d500003ad50000
+    m_ExpandedIDs: 0000000040da000042da000044da000046da000048da00004ada00004cda00004eda000050da000052da000054da000056da000058da00005ada00005cda00005eda000060da000062da000064da000066da0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -482,24 +482,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 180}
+    scrollPos: {x: 0, y: 392.5}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff0000000018d500001ad500001cd500001ed5000020d5000022d5000024d5000026d5000028d500002ad500002cd500002ed5000030d5000032d5000034d5000038d500003ad5000076d70000
+    m_ExpandedIDs: ffffffff0000000040da000042da000044da000046da000048da00004ada00004cda00004eda000050da000052da000054da000056da000058da00005ada00005cda00005eda000060da000062da000064da000052e10000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Alchemy Scene
-      m_OriginalName: Alchemy Scene
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 57464
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 12}
@@ -540,7 +540,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 115
 --- !u!114 &16
@@ -1251,9 +1251,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -0.91950506, y: 1.0460657, z: -0.6269471}
+    m_Target: {x: -4.8021307, y: -0.7709563, z: -3.0693114}
     speed: 2
-    m_Value: {x: -0.91950506, y: 1.0460657, z: -0.6269471}
+    m_Value: {x: -4.8021307, y: -0.7709563, z: -3.0693114}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1299,13 +1299,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.06837667, y: 0.8742891, z: -0.12904896, w: -0.46304643}
+    m_Target: {x: -0.09346183, y: 0.8747155, z: -0.18669032, w: -0.4375258}
     speed: 2
-    m_Value: {x: -0.067928955, y: 0.8746792, z: -0.12843628, w: -0.46241334}
+    m_Value: {x: -0.09331504, y: 0.8749802, z: -0.18674688, w: -0.4368381}
   m_Size:
-    m_Target: 1.2050849
+    m_Target: 3.9134383
     speed: 2
-    m_Value: 1.2050849
+    m_Value: 3.9134383
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1378,9 +1378,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: f4caffff66e3ffff10fbffff78e60000
+      m_SelectedIDs: a0d2ffff
+      m_LastClickedID: -11616
+      m_ExpandedIDs: ced2ffffdad2ffff10fbffff8eb80000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

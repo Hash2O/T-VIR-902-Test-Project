@@ -5781,7 +5781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4544d919370e045934b0ced083211b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PotionBottle
-  containedRecipe: {fileID: 11400000, guid: 34f9f23a99e9ae54b9d3c18bd7bcaec7, type: 2}
+  containedRecipe: {fileID: 11400000, guid: 42792cb8fdf498241b49770eb995c9da, type: 2}
   liquidRenderer: {fileID: 3377414255097050573}
 --- !u!4 &4144926858561285283 stripped
 Transform:

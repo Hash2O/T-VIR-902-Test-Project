@@ -12,7 +12,7 @@ public class Cauldron : MonoBehaviour
     public float resetTime = 30f;   // Temps avant reset du contenu du chaudron (entre 30 et 60 sec ?)
 
     [Header("Références externes")]
-    public List<RecipeData> allRecipes;     // Toutes les recettes du jeu. Certaines connues au départ, d'autres découvertes par expérimentation ou par récompense
+    //public List<RecipeData> allRecipes;     // Toutes les recettes du jeu. Certaines connues au départ, d'autres découvertes par expérimentation ou par récompense
     public StirringManager stirringManager; // Gestion des effets de la louche pour remuer le mélange dans le chaudron
 
     [Header("UI")]
@@ -148,7 +148,7 @@ public class Cauldron : MonoBehaviour
 
     private List<RecipeData> FindMatchingRecipes()
     {
-        return allRecipes
+        return RecipeManager.Instance.allRecipes
             .Where(r => addedIngredients.All(i => r.requiredIngredients.Contains(i)))
             .ToList();
     }
@@ -201,7 +201,7 @@ public class Cauldron : MonoBehaviour
         canStir = false;
         EnableStirring(false);
 
-        Debug.Log($"✅ Recette '{currentRecipe?.recipeName}' terminée !");
+        Debug.Log($"Recette '{currentRecipe?.recipeName}' terminée !");
         if (currentRecipe != null)
         {
             // Changement progressif de couleur
@@ -215,7 +215,7 @@ public class Cauldron : MonoBehaviour
             if (successSound != null)
                 successSound.Play();
 
-            // NB : si l'option création directe de l'objet, décommenter cette partie
+            // NB : si l'option création directe de l'objet, décommenter cette partie (utile pour les tests rapides)
             // Création du résultat
             //if (currentRecipe.resultPrefab != null)
             //{
@@ -247,7 +247,7 @@ public class Cauldron : MonoBehaviour
 
     public void ResetCauldron()
     {
-        Debug.Log("🔄 Réinitialisation du chaudron...");
+        Debug.Log("Réinitialisation du contenu du chaudron en cours.");
 
         // Effet visuel de purification
         if (resetEffectPrefab != null)
@@ -294,7 +294,7 @@ public class Cauldron : MonoBehaviour
         if (resetSound != null)
             resetSound.Play();
 
-        Debug.Log("✅ Chaudron prêt pour une nouvelle recette !");
+        Debug.Log("Chaudron prêt pour une nouvelle recette !");
     }
 
     private IEnumerator AutoResetAfterDelay(float delay)
@@ -305,7 +305,7 @@ public class Cauldron : MonoBehaviour
 
     private IEnumerator ResetCauldronVFX(float time)
     {
-        Debug.Log("Reset Cauldron VFX started");
+        Debug.Log("Ré initialisation du VFX du ResetCauldron.");
 
         Vector3 spawnPos = effectSpawnPoint != null ? effectSpawnPoint.position : transform.position;
 
@@ -315,7 +315,7 @@ public class Cauldron : MonoBehaviour
 
         if (vfx == null)
         {
-            Debug.LogWarning("⚠️ Le prefab ResetEffect n'a pas de ParticleSystem !");
+            Debug.LogWarning("Le prefab ResetEffect n'a pas de ParticleSystem !");
             yield break;
         }
 
@@ -326,21 +326,21 @@ public class Cauldron : MonoBehaviour
 
     private IEnumerator HandleFailedMix()
     {
-        Debug.Log("💀 Mauvaise combinaison d'ingrédients !");
+        Debug.Log("Mauvaise combinaison d'ingrédients !");
 
         // Effets visuels/sonores d'échec
         if (liquidRenderer != null)
         {
             Material mat = liquidRenderer.material;
-            Color failColor = Color.magenta; // ou une couleur “erreur”
+            Color failColor = Color.magenta; // NB : définir une couleur “erreur” spécifique
             mat.color = failColor;
         }
 
-        // (optionnel) petit son d'échec
+        // (optionnel) Notification : audio d'échec
         if (resetSound != null)
             resetSound.Play();
 
-        // (optionnel) particules de fumée
+        // (optionnel) Notifiation : particules de fumée
         if (successParticles != null)
         {
             var main = successParticles.main;
@@ -348,7 +348,8 @@ public class Cauldron : MonoBehaviour
             successParticles.Play();
         }
 
-        yield return new WaitForSeconds(2f); // délai avant reset
+        // délai avant reset
+        yield return new WaitForSeconds(2f); 
 
         ResetCauldron();
     }

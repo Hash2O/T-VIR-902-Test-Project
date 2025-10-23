@@ -28,8 +28,9 @@ public class IngredientData : ScriptableObject
 
     [Header("Apparence et références")]
     public Sprite icon; // Pour l’interface
-    public GameObject prefab; // Pour instancier dans la scène VR
+    public GameObject prefab; // Pour instancier l'object dans la scène
 
+    // Options pour développer le système par la suite
     [Header("Caractéristiques gustatives")]
     public TasteProfile[] tastes; // Permet d’avoir plusieurs goûts simultanés
 

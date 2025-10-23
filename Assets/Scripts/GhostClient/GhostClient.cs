@@ -3,7 +3,7 @@ using System.Collections;
 public class GhostClient : MonoBehaviour
 {
     public RecipeData requestedRecipe;
-    public bool isSatisfied;
+    public bool isSatisfied { get; private set; }
 
     [Header("Apparence")]
     public Renderer ghostRenderer; // Assigné dans l’inspector
@@ -60,5 +60,4 @@ public class GhostClient : MonoBehaviour
         }
     }
 }
-
 
