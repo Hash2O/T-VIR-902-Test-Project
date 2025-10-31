@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Cauldron : MonoBehaviour
 {
@@ -18,7 +19,8 @@ public class Cauldron : MonoBehaviour
     [Header("UI")]
     public List<Image> ingredientSlots;     // UI Ingrédients présents dans le chaudron avant remuage
     public Image recipePreviewIcon;         // UI Recette potentielle détectée
-    public TMPro.TextMeshProUGUI recipeNameText;    // UI Nom de la recette
+    public TextMeshProUGUI recipeNameText;    // UI Nom de la recette
+    public TextMeshProUGUI newRecipeText;     // UI Info nouvelle recette découverte
 
     [Header("Effets visuels et audio")]
     public Renderer liquidRenderer; // Surface du liquide (MeshRenderer)
@@ -173,6 +175,8 @@ public class Cauldron : MonoBehaviour
 
         if (recipeNameText != null)
             recipeNameText.text = recipe ? recipe.recipeName : "Aucune recette détectée";
+
+        if (newRecipeText != null) newRecipeText.text = "";
     }
 
     private void Update()

@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RecipeManager : MonoBehaviour
 {
@@ -11,6 +13,8 @@ public class RecipeManager : MonoBehaviour
 
     [Header("Recettes découvertes par le joueur")]
     public List<RecipeData> discoveredRecipes = new List<RecipeData>();
+
+    [SerializeField] private TextMeshProUGUI newRecipeText;
 
     private void Awake()
     {
@@ -36,6 +40,7 @@ public class RecipeManager : MonoBehaviour
             discoveredRecipes.Add(recipe);
             Debug.Log($"Nouvelle recette découverte : {recipe.recipeName}");
             // A faire : notifier ici le grimoire / livre de recettes (UI Canvas)
+            newRecipeText.text = "New Recipe Discovered.";
         }
     }
 

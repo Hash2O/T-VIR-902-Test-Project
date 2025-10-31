@@ -12,6 +12,10 @@ TagManager:
   - Potion
   - Flame
   - Vermin
+  - EmptyBottle
+  - Cauldron
+  - ResetCauldron
+  - Fertilizer
   layers:
   - Default
   - TransparentFX
