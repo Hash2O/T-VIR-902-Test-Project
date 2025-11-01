@@ -61,6 +61,9 @@ public class GhostCycleManager : MonoBehaviour
             agent.SetDestination(ghostWaitPoint.position);
         }
 
+        // Signale un nouveau client fantôme en approche
+        AudioManager.audioInstance.PlayTheGoodSound(1); // Plays Metal Gear Solid alert sound !
+
         // Attend que le fantôme soit satisfait
         yield return new WaitUntil(() => activeGhost.isSatisfied);
 
@@ -88,6 +91,9 @@ public class GhostCycleManager : MonoBehaviour
             yield break;
 
         int coinCount = Random.Range(1, 4);
+
+        // Singleton
+        AudioManager.audioInstance.PlayTheGoodSound(0); // Plays cashing sound !
 
         for (int i = 0; i < coinCount; i++)
         {

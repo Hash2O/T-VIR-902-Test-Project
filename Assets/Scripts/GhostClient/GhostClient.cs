@@ -39,7 +39,8 @@ public class GhostClient : MonoBehaviour
         {
             Debug.Log($"Mauvaise potion : {received.recipeName} au lieu de {requestedRecipe.recipeName}");
             isSatisfied = false;
-            StartCoroutine(ChangeGhostColor(Color.black)); // couleur d’échec, par exemple
+            StartCoroutine(ChangeGhostColor(Color.grey)); // couleur d’échec, par exemple
+            AudioManager.audioInstance.PlayTheGoodSound(2); // Plays "NOPE" !
         }
     }
 
