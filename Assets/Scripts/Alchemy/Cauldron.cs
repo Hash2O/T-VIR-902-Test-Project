@@ -272,7 +272,7 @@ public class Cauldron : MonoBehaviour
             if (slot != null)
             {
                 slot.sprite = null;
-                slot.color = new Color(1, 1, 1, 0.2f);
+                slot.color = new Color(1, 1, 1, 0.01f);
             }
         }
         UpdateRecipeUI(null);

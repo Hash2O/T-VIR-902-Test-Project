@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0920a524e085c9f498d17e12348d0767, type: 3}
+  m_Name: Ingredient Hazelnut
+  m_EditorClassIdentifier: Assembly-CSharp::IngredientData
+  ingredientName: Ingredient 5
+  description: "Le 5eme ingr\xE9dient pour une recette de toute BEAU-TE"
+  type: 0
+  icon: {fileID: 5488086946749717670, guid: 215687feeab0b7445b4a1cd86c82c2e1, type: 3}
+  prefab: {fileID: 6747318834479662115, guid: 1b71c73afa9d5a645b345a6405449b57, type: 3}
+  tastes: 0100000004000000
+  specialEffects:
+  - 
+  potency: 1
+  colorHint: {r: 0.4198113, g: 0.22376734, b: 0.22376734, a: 1}
