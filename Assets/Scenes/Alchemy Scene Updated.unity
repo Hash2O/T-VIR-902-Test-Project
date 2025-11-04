@@ -12688,7 +12688,7 @@ Transform:
   - {fileID: 696419234}
   - {fileID: 1111283197}
   - {fileID: 1646076756}
-  - {fileID: 6615685403044200997}
+  - {fileID: 1550035583}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &783179466
@@ -20145,6 +20145,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 17917b3626dfb904aa39fd216b15783a, type: 3}
   m_PrefabInstance: {fileID: 1547619258}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1550035582
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 782424565}
+    m_Modifications:
+    - target: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.46878976
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1441216
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.2442822
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8029744452316018378, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
+      propertyPath: m_Name
+      value: PacMan Trophy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
+--- !u!4 &1550035583 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
+  m_PrefabInstance: {fileID: 1550035582}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1555116034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26851,68 +26913,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3851767542437884629, guid: 1b71c73afa9d5a645b345a6405449b57, type: 3}
   m_PrefabInstance: {fileID: 3325370965440698487}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &6615685403044200996
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 782424565}
-    m_Modifications:
-    - target: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.47278976
-      objectReference: {fileID: 0}
-    - target: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.1191218
-      objectReference: {fileID: 0}
-    - target: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.2202822
-      objectReference: {fileID: 0}
-    - target: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8029744452316018378, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
-      propertyPath: m_Name
-      value: PacMan Trophy
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
---- !u!4 &6615685403044200997 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1408038460149761331, guid: 9d64321a3823add4d925f9896c9a27af, type: 3}
-  m_PrefabInstance: {fileID: 6615685403044200996}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7101706573301139505
 PrefabInstance:

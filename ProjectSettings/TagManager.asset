@@ -16,6 +16,7 @@ TagManager:
   - Cauldron
   - ResetCauldron
   - Fertilizer
+  - Ichor
   layers:
   - Default
   - TransparentFX

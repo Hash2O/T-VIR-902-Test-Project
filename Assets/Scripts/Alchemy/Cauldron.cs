@@ -97,7 +97,7 @@ public class Cauldron : MonoBehaviour
         }
     }
 
-    private void AddIngredient(IngredientData data)
+    public void AddIngredient(IngredientData data)
     {
         addedIngredients.Add(data);
         Debug.Log($"Ingrédient ajouté : {data.ingredientName}");
