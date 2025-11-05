@@ -17,7 +17,7 @@ MonoBehaviour:
   icon: {fileID: -2217656884674354197, guid: 215687feeab0b7445b4a1cd86c82c2e1, type: 3}
   requiredIngredients:
   - {fileID: 11400000, guid: b6b89f4f49910d849a64efdd130ddcdd, type: 2}
-  - {fileID: 11400000, guid: 30f1d64c539f5c8448ee030729b4dcc9, type: 2}
+  - {fileID: 11400000, guid: 475fd53722be2ee459e46a1ae9c4aedc, type: 2}
   - {fileID: 11400000, guid: cf7200838ecbb704cadef1245442a605, type: 2}
   - {fileID: 11400000, guid: 017064dd6d929794da473224ceab5408, type: 2}
   potionColor: {r: 0.047169805, g: 0.046724807, b: 0.047169805, a: 0.6862745}

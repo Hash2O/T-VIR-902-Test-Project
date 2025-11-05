@@ -277,7 +277,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9192da6ad663f864cafa77018c0d8f53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VerminBusterManager
-  smashPrefab: {fileID: 2615355288238696180, guid: aeee50257cc24584b8014ff9a2ec5a13, type: 3}
+  smashPrefab: {fileID: 7157846214639822833, guid: 9023bab123144b74a95f04d3331c0ab2, type: 3}
+  smashParticle: {fileID: 643863492434836860, guid: 40e7aeb55775380449512397f895c406, type: 3}
+  impactVelocity: 0.3
 --- !u!82 &282546921385519364
 AudioSource:
   m_ObjectHideFlags: 0

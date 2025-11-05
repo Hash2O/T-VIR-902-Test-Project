@@ -5,22 +5,26 @@ using static UnityEngine.ParticleSystem;
 public class VerminBusterManager : MonoBehaviour
 {
     [SerializeField] private GameObject smashPrefab;
-    
-    private ParticleSystem smashParticle;
+    //[SerializeField] private GameObject splashPrefab;
+    [SerializeField] private ParticleSystem smashParticle;
+    [SerializeField] private float impactVelocity = 0.1f;
 
+    private Rigidbody rb;
     private AudioSource smashAudio;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        rb = GetComponent<Rigidbody>();
         smashAudio = GetComponent<AudioSource>();
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Vermin"))
+        if(collision.gameObject.CompareTag("Vermin") && rb.linearVelocity.sqrMagnitude >= impactVelocity)
         {
-            GameObject prefab = Instantiate(smashPrefab, collision.transform.position, Quaternion.identity);
-            smashParticle = prefab.GetComponentInChildren<ParticleSystem>();
+            Debug.Log("Velocity : " + rb.linearVelocity.sqrMagnitude);
+            GameObject prefab = Instantiate(smashPrefab, collision.transform.position, collision.transform.rotation);
+            //Instantiate(splashPrefab, prefab.transform.position, Quaternion.identity);
             smashParticle.Play();
             smashAudio.Play();
             if (collision.gameObject != null) Destroy(collision.gameObject);

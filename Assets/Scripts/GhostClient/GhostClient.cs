@@ -15,7 +15,7 @@ public class GhostClient : MonoBehaviour
         if (bottle != null)
         {
             ReceivePotion(bottle);
-            Destroy(bottle.gameObject, 4f); // la bouteille se vide / disparaît
+            Destroy(bottle.gameObject, 1f); // la bouteille se vide / disparaît
         }
     }
 

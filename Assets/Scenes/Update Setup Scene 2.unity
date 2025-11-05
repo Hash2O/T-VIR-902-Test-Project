@@ -1721,15 +1721,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5773519684535331874, guid: 30a88aaca74d2b14796d97d67893e942, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.492
+      value: -1.23
       objectReference: {fileID: 0}
     - target: {fileID: 5773519684535331874, guid: 30a88aaca74d2b14796d97d67893e942, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.218
+      value: 0.76
       objectReference: {fileID: 0}
     - target: {fileID: 5773519684535331874, guid: 30a88aaca74d2b14796d97d67893e942, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.671
+      value: -0.268
       objectReference: {fileID: 0}
     - target: {fileID: 5773519684535331874, guid: 30a88aaca74d2b14796d97d67893e942, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1820,7 +1820,7 @@ MonoBehaviour:
   moreCutForce: 1
   sliceableLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 128
 --- !u!1001 &177307883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24476,6 +24476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   content: {fileID: 1340481731}
   bubbles: {fileID: 632937627}
+  colorMaterials: []
 --- !u!1 &2046064572
 GameObject:
   m_ObjectHideFlags: 0

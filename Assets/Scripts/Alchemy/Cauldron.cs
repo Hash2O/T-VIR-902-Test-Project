@@ -92,6 +92,7 @@ public class Cauldron : MonoBehaviour
             if (ingredient != null && ingredient.data != null)
             {
                 AddIngredient(ingredient.data);
+                AudioManager.audioInstance.PlayTheGoodSound(3);
                 Destroy(other.gameObject);
             }
         }

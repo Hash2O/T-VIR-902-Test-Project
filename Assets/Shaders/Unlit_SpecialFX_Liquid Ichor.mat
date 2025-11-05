@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Unlit_SpecialFX_Liquid 2
+  m_Name: Unlit_SpecialFX_Liquid Ichor
   m_Shader: {fileID: 4800000, guid: 4b4966b5f68074c48b6c50deac6d5dd3, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -29,15 +29,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _FillAmount: 0.45
-    - _Rim: 0.003
-    - _RimPower: 0.8
+    - _FillAmount: 0.5
+    - _Rim: 0.0015
+    - _RimPower: 1
     - _WobbleX: 0
     - _WobbleZ: 0
     m_Colors:
     - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Tint: {r: 0.22797687, g: 0.8018868, b: 0.07943218, a: 1}
-    - _TopColor: {r: 0.227451, g: 0.8000001, b: 0.078431375, a: 1}
+    - _Tint: {r: 1, g: 0, b: 0.10514355, a: 1}
+    - _TopColor: {r: 1, g: 0, b: 0.10588236, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
