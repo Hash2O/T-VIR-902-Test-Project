@@ -57,6 +57,7 @@
 using UnityEngine;
 using EzySlice;
 using Valve.VR.InteractionSystem;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class AdvancedSliceObject : MonoBehaviour
 {
@@ -117,18 +118,22 @@ public class AdvancedSliceObject : MonoBehaviour
 
     private void SetupSlicedComponents(GameObject slicedPart, IngredientBehaviour parentIngredient)
     {
+        slicedPart.tag = "Ingredient";
         slicedPart.layer = 7;
 
         Rigidbody rb = slicedPart.AddComponent<Rigidbody>();
         MeshCollider collider = slicedPart.AddComponent<MeshCollider>();
         collider.convex = true;
 
+        XRGrabInteractable grabInteractable = slicedPart.AddComponent<XRGrabInteractable>();
+        grabInteractable.useDynamicAttach = true;
+
         // Hériter du comportement d’ingrédient
         IngredientBehaviour newIngredient = slicedPart.AddComponent<IngredientBehaviour>();
 
         if (parentIngredient != null)
         {
-            newIngredient.data = parentIngredient.data; // ⚗️ Héritage de la RecipeData
+            newIngredient.data = parentIngredient.data; // Héritage de la RecipeData
         }
 
         // Optionnel : légère poussée pour séparer visuellement les morceaux

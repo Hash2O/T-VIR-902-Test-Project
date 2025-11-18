@@ -67,7 +67,11 @@ public class StirringManager : MonoBehaviour
 
         // Feedback visuel : lancer des particules si présentes
         if (stirEffect != null && !stirEffect.isPlaying && isInBowl)
+        {
             stirEffect.Play();
+            AudioManager.audioInstance.PlayTheGoodSound(4);
+        }
+            
 
         // Vérification si terminé
         if (stirProgress >= requiredProgress)
