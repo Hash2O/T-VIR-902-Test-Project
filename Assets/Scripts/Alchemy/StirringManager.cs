@@ -91,8 +91,8 @@ public class StirringManager : MonoBehaviour
     public void ResetStirringValues()
     {
         stirProgress = 0f;
-        requiredProgress = 5f;
-        stirMultiplier = 100f;
+        requiredProgress = 2f;
+        stirMultiplier = 150f;
         isWellStirred = false;
     }
 }

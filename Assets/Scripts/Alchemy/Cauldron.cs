@@ -229,7 +229,7 @@ public class Cauldron : MonoBehaviour
         }
 
         // Ajout automatique si nouvelle recette découverte
-        RecipeManager.Instance?.DiscoverRecipe(currentRecipe);
+        //RecipeManager.Instance?.DiscoverRecipe(currentRecipe);
 
         StartCoroutine(AutoResetAfterDelay(resetTime)); // reset après le temps défini dans l'inspector
     }
@@ -304,6 +304,7 @@ public class Cauldron : MonoBehaviour
 
     private IEnumerator AutoResetAfterDelay(float delay)
     {
+        Debug.Log("Auto Reset Start.");
         yield return new WaitForSeconds(delay);
         ResetCauldron();
     }
